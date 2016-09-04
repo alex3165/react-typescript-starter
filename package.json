@@ -1,0 +1,57 @@
+{
+  "name": "giistr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node dev.server.js",
+    "build": "NODE_ENV=prod webpack --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alex3165/github-issues.git"
+  },
+  "author": "Alexandre Rieux",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb-base": "^5.0.2",
+    "eslint-plugin-import": "^1.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "json-loader": "^0.5.4",
+    "react-hot-loader": "^1.3.0",
+    "react-transform-hmr": "^1.0.4",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "tslint": "^3.14.0",
+    "tslint-loader": "^2.1.5",
+    "tslint-react": "^0.4.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.3",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-immutable": "3.0.6",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1",
+    "stilr": "^1.2.4"
+  }
+}
