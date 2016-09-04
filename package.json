@@ -1,8 +1,8 @@
 {
-  "name": "giistr",
-  "version": "1.0.0",
+  "name": "React typescript starter",
+  "version": "0.1.0",
   "description": "",
-  "main": "server.js",
+  "main": "dev.server.js",
   "scripts": {
     "start": "NODE_ENV=dev node dev.server.js",
     "build": "NODE_ENV=prod webpack --config ./webpack.config.js"
