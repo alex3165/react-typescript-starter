@@ -41,8 +41,7 @@ For production :
 npm run build
 ```
 
-Everything you need is then in the dist folder, you can use the nginx.conf file to have a ready to use server setup.
-
+Then with your http server target the dist folder
 
 ## Todo
 - Replace styling dependency
