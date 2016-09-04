@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alex3165/github-issues.git"
+    "url": "git://github.com/alex3165/react-typescript-starter.git"
   },
   "author": "Alexandre Rieux",
   "license": "ISC",
