@@ -2,7 +2,6 @@
 /// <reference path='typings/globals.d.ts'/>
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as StyleSheet from 'stilr';
 
 import { Router, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -38,5 +37,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('content')
 );
-
-document.getElementById('stylesheet').textContent = StyleSheet.render();

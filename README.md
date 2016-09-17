@@ -6,16 +6,14 @@ Simple boilerplate to start a react application using typescript.
 - Typescript
 - Webpack
 - Babel
-- eslint / tslint with airbnb setup
-
+- Eslint / TSLint with airbnb setup
 - React
 - Redux
 - React-router
 - React-router-redux
 - Immutable
-- Stilr (Need to replace it with something better)
-
-And small other dependencies
+- Radium
+- Jest for unit testing
 
 
 ## Compatibility
@@ -42,7 +40,3 @@ npm run build
 ```
 
 Then with your http server target the dist folder
-
-## Todo
-- Replace styling dependency
-- Add unit test setup

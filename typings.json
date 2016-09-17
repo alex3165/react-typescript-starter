@@ -5,6 +5,7 @@
     "immutable": "registry:npm/immutable#3.7.6+20160411060006"
   },
   "globalDependencies": {
+    "radium": "registry:dt/radium#0.18.1+20160907102602",
     "react": "registry:dt/react#0.14.0+20160817201227",
     "react-addons-test-utils": "registry:dt/react-addons-test-utils#0.14.0+20160427035638",
     "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
