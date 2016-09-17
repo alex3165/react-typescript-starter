@@ -1,5 +1,5 @@
 # react-typescript-starter
-Simple boilerplate to start a react application using typescript.
+Complete setup to start a new React project using Typescript.
 
 
 ## It includes
@@ -17,10 +17,6 @@ Simple boilerplate to start a react application using typescript.
 - Jest for unit testing
 
 
-## Compatibility
-The setup is compiling to ES5 and has a polyfill for the fetch API, it should be compatible cross browsers.
-
-
 ## How to use it
 
 Installation (will install typings as well):
@@ -28,14 +24,17 @@ Installation (will install typings as well):
 npm install
 ```
 
-Runing development server :
+- Runing development server :
 ```
-npm run start
-```
-
-For production :
-```
-npm run build
+npm start
 ```
 
-Then with your http server target the dist folder
+- Build for production :
+```
+npm build
+```
+
+- Run unit tests:
+```
+npm test
+```
