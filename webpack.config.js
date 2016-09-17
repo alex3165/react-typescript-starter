@@ -9,11 +9,10 @@ var output = {
   filename: 'bundle.js',
   path: path.join(__dirname, 'dist')
 };
+
+// Add more files to copy to the dist folder (Eventually an assets folder)
 var toCopy = [
-  { from: 'assets', to: 'assets' },
-  { from: 'icons', to: 'icons' },
-  { from: 'index.html' },
-  { from: 'nginx.conf' }
+  { from: 'index.html' }
 ];
 
 var plugins = [
