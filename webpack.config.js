@@ -26,7 +26,7 @@ var plugins = [
 ];
 
 var devtool = '';
-var loaders = ['babel', 'ts-loader'];
+var loaders = ['react-hot', 'babel', 'ts-loader'];
 
 if (env === 'dev') {
   entries = entries.concat(['webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:3001']);

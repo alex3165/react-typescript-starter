@@ -6,6 +6,7 @@ Simple boilerplate to start a react application using typescript.
 - Typescript
 - Webpack
 - Babel
+- React-hot-loader
 - Eslint / TSLint with airbnb setup
 - React
 - Redux
@@ -22,11 +23,9 @@ The setup is compiling to ES5 and has a polyfill for the fetch API, it should be
 
 ## How to use it
 
-Installation :
+Installation (will install typings as well):
 ```
 npm install
-npm install -g typescript typings
-typings install
 ```
 
 Runing development server :
