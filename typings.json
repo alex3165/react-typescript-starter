@@ -6,6 +6,7 @@
   },
   "globalDependencies": {
     "react": "registry:dt/react#0.14.0+20160817201227",
+    "react-addons-test-utils": "registry:dt/react-addons-test-utils#0.14.0+20160427035638",
     "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
     "react-redux": "registry:dt/react-redux#4.4.0+20160724070751",
     "react-router": "registry:dt/react-router#2.0.0+20160813233016",
