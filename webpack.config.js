@@ -25,10 +25,10 @@ var plugins = [
 ];
 
 var devtool = '';
-var loaders = ['react-hot', 'babel', 'ts-loader'];
+var loaders = ['babel', 'ts-loader'];
 
 if (env === 'dev') {
-  entries = entries.concat(['webpack/hot/only-dev-server', 'webpack-dev-server/client?http://localhost:3001']);
+  entries = entries.concat(['webpack-dev-server/client?http://localhost:3001']);
   output.path = __dirname;
   devtool = 'eval';
   plugins.push(new webpack.HotModuleReplacementPlugin());

@@ -6,7 +6,6 @@ Complete setup to start a new React project using Typescript.
 - Typescript
 - Webpack
 - Babel
-- React-hot-loader
 - Eslint / TSLint with airbnb setup
 - React
 - Redux
