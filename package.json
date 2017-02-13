@@ -6,7 +6,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=dev node dev.server.js",
     "build": "cross-env NODE_ENV=prod webpack",
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint 'src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
