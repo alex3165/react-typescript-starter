@@ -1,5 +1,3 @@
-// tslint:disable-next-line
-/// <reference path='typings/globals.d.ts'/>
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
@@ -7,7 +5,6 @@ import { Router, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { Map } from 'immutable';
 import thunk from 'redux-thunk';
 import * as createLogger from 'redux-logger';
 
@@ -24,10 +21,10 @@ if (env === 'dev') {
   middlewares.push(createLogger());
 }
 
-const store = createStore(rootReducer, Map(), applyMiddleware(...middlewares));
+const store = createStore(rootReducer, {}, applyMiddleware(...middlewares));
 const history = syncHistoryWithStore(browserHistory, store, {
-    selectLocationState: (state: Map<string, any>) => state.get('routing')
-  });
+  selectLocationState: (state: any) => state.routing
+});
 
 ReactDOM.render(
   <Provider store={store}>

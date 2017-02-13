@@ -1,26 +1,23 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
-import * as Radium from 'radium';
+import { StyleSheet, css } from 'aphrodite/no-important';
 
-const style = {
+const styles = StyleSheet.create({
   title: {
     ':hover': {
       color: 'blue'
     }
   }
-};
+});
 
-export class Main extends React.Component<any, any> {
+export class Main extends React.Component<void, void> {
 
   public render() {
-
     return (
       <div>
-        <h1 style={style.title}>Yeah it works</h1>
+        <h1 className={css(styles.title)}>Yeah it works</h1>
       </div>
     );
   }
 }
 
-export default
-connect(null, null)(Radium(Main));
+export default Main;

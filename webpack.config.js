@@ -25,7 +25,6 @@ var plugins = [
 ];
 
 var devtool = '';
-var loaders = ['babel', 'ts-loader'];
 
 if (env === 'dev') {
   entries = entries.concat(['webpack-dev-server/client?http://localhost:3001']);
@@ -46,12 +45,11 @@ module.exports = {
   resolve: {
     extensions: ['', '.ts', '.js', '.tsx', '.css']
   },
-  cache: true,
   module: {
     loaders: [
       {
         test: /\.tsx?$/,
-        loaders: loaders
+        loader: 'ts-loader'
       },
       {
         test: /\.css$/,
@@ -60,12 +58,6 @@ module.exports = {
       {
         test: /\.json$/,
         loader: 'json-loader'
-      }
-    ],
-    preLoaders: [
-      {
-        test: /\.tsx?$/,
-        loader: 'tslint'
       }
     ]
   },

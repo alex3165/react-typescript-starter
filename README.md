@@ -5,16 +5,13 @@ Complete setup to start a new React project using Typescript.
 ## It includes
 - Typescript
 - Webpack
-- Babel
 - Eslint / TSLint with airbnb setup
 - React
 - Redux
 - React-router
 - React-router-redux
-- Immutable
-- Radium
-- Jest for unit testing
-
+- Aphrodite
+- Jest / ts-jest for unit testing
 
 ## How to use it
 

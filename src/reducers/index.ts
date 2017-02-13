@@ -1,6 +1,9 @@
-import { combineReducers } from 'redux-immutable';
-import { routerReducer } from 'react-router-redux';
+import { routerReducer as routing } from 'react-router-redux';
+import { combineReducers, Action } from 'redux';
 
-export default combineReducers({
-  routing: routerReducer
+const reducers = combineReducers<any>({
+  routing,
+  entities: (state: any = {}, action: Action) => state
 });
+
+export default reducers;
