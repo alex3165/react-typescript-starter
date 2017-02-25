@@ -15,7 +15,7 @@ import './common.css';
 
 declare var process: any;
 const env = process.env.NODE_ENV;
-const middlewares: Array<any> = [ thunk ];
+const middlewares: any[] = [ thunk ];
 
 if (env === 'dev') {
   middlewares.push(createLogger());

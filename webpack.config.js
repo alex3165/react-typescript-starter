@@ -33,8 +33,7 @@ if (env === 'dev') {
   plugins.push(new webpack.HotModuleReplacementPlugin());
 } else {
   plugins = plugins.concat([
-    new CopyWebpackPlugin(toCopy),
-    new webpack.optimize.DedupePlugin()
+    new CopyWebpackPlugin(toCopy)
   ]);
 }
 
@@ -43,10 +42,10 @@ module.exports = {
   output: output,
   devtool: devtool,
   resolve: {
-    extensions: ['', '.ts', '.js', '.tsx', '.css']
+    extensions: ['.ts', '.js', '.tsx', '.css']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
@@ -54,10 +53,6 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
       }
     ]
   },
