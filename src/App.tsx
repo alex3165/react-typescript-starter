@@ -6,7 +6,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import * as createLogger from 'redux-logger';
+import createLogger from 'redux-logger';
 
 import Main from './containers/main';
 
