@@ -6,12 +6,9 @@
     "removeComments": true,
     "jsx": "react",
     "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
     "noUnusedLocals": true,
-    "declaration": true,
     "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [

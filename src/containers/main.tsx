@@ -9,8 +9,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export class Main extends React.Component<void, void> {
-
+class Main extends React.Component<any, {}> {
   public render() {
     return (
       <div>

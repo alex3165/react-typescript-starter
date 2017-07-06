@@ -1,12 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Router, Route, browserHistory } from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import * as createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 
 import Main from './containers/main';
 
@@ -22,13 +21,10 @@ if (env === 'dev') {
 }
 
 const store = createStore(rootReducer, {}, applyMiddleware(...middlewares));
-const history = syncHistoryWithStore(browserHistory, store, {
-  selectLocationState: (state: any) => state.routing
-});
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={history}>
+    <Router>
       <Route path="/" component={Main}/>
     </Router>
   </Provider>,
