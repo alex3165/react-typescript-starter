@@ -10,7 +10,7 @@ Complete setup to start a new React project using Typescript.
 - Redux
 - React-router
 - React-router-redux
-- Aphrodite
+- Styled-component
 - Jest / ts-jest for unit testing
 
 ## How to use it
