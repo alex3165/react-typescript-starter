@@ -1,36 +1,15 @@
-# react-typescript-starter
-Complete setup to start a new React project using Typescript.
+# ta-station-finder
 
+Find an origin and a destination station on a map and deeplink to the Trainline results page
 
-## It includes
-- Typescript
-- Webpack
-- Eslint / TSLint with airbnb setup
-- React
-- Redux
-- React-router
-- React-router-redux
-- Styled-component
-- Jest / ts-jest for unit testing
+## How to start?
 
-## How to use it
-
-Installation (will install typings as well):
+### install dependencies
 ```
-npm install
+npm i
 ```
 
-- Runing development server :
+### start dev server
 ```
 npm start
-```
-
-- Build for production :
-```
-npm build
-```
-
-- Run unit tests:
-```
-npm test
 ```

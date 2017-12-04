@@ -1,5 +1,5 @@
 {
-  "name": "react-typescript-starter",
+  "name": "ta-station-finder",
   "version": "0.1.1",
   "description": "",
   "main": "dev.server.js",
@@ -8,10 +8,6 @@
     "build": "cross-env NODE_ENV=prod webpack",
     "test": "jest",
     "lint": "tslint 'src/**/*.{ts,tsx}'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/alex3165/react-typescript-starter.git"
   },
   "author": "Alexandre Rieux",
   "license": "ISC",
@@ -59,8 +55,10 @@
     "whatwg-fetch": "^2.0.2"
   },
   "dependencies": {
+    "mapbox-gl": "^0.42.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-mapbox-gl": "^3.2.1",
     "react-redux": "^5.0.3",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
