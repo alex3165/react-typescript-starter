@@ -8,7 +8,7 @@ export interface Props {
   onMouseLeave: any;
 }
 
-const layout = { 'icon-image': 'marker-15' };
+const layout = { 'icon-image': 'gb-national-rail' };
 
 export const Stations: React.StatelessComponent<Props> = ({
   locations,
