@@ -1,11 +1,14 @@
 // tslint:disable-next-line:no-var-requires
 const { stringify } = require('qs');
+import * as moment from 'moment';
 export const baseUrl = 'https://www.thetrainline.com/book/results';
 
 export const queryBuilder = (origin: string, destination: string) => ({
   origin,
   destination,
-  outwardDate: '2017-12-10T10:00:00',
+  outwardDate: moment()
+    .add(1, 'day')
+    .format(),
   outwardDateType: 'departAfter',
   journeySearchType: 'single',
   passengers: ['1987-12-06']

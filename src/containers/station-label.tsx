@@ -17,6 +17,7 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   cursor: pointer;
+  background-color: white;
 `;
 
 const Placeholder = styled.div`
@@ -31,6 +32,15 @@ const Close = styled.div`
 `;
 
 const Input = styled.input``;
+
+const List = styled.ul`
+  position: absolute;
+  background-color: white;
+`;
+
+const Wrapper = styled.div`
+  position: relative;
+`;
 
 export interface Props {
   onUnselect: () => void;
@@ -62,15 +72,15 @@ export default class StationLabel extends React.Component<Props> {
     });
   };
 
+  public onSelectStation = (id: string) => {
+    this.props.onSelect(id, this.props.direction);
+    this.setState({
+      query: ''
+    });
+  };
+
   public render() {
-    const {
-      children,
-      onUnselect,
-      placeholder,
-      stations,
-      onSelect,
-      direction
-    } = this.props;
+    const { children, onUnselect, placeholder, stations } = this.props;
     const { shouldDisplayPlaceholder, query } = this.state;
 
     const filteredStations = Object.keys(stations)
@@ -78,7 +88,7 @@ export default class StationLabel extends React.Component<Props> {
       .map(id => stations[id]);
 
     return (
-      <div>
+      <Wrapper>
         <Container selected={!!children} onClick={this.onToggleControl}>
           {!!children && <Close onClick={onUnselect}>x</Close>}
           {children}
@@ -94,20 +104,20 @@ export default class StationLabel extends React.Component<Props> {
         {!children &&
           !shouldDisplayPlaceholder &&
           filteredStations.length !== Object.keys(stations).length && (
-            <ul>
+            <List>
               {filteredStations
                 .filter((_, index) => index < 20)
                 .map((station, index) => (
                   <li
                     key={index}
-                    onClick={() => onSelect(station.id, direction)}
+                    onClick={() => this.onSelectStation(station.id)}
                   >
                     {station.name}
                   </li>
                 ))}
-            </ul>
+            </List>
           )}
-      </div>
+      </Wrapper>
     );
   }
 }
