@@ -2,7 +2,24 @@
   width: 200px;
   height: 66px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #8c9da1;
   text-align: center;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+ul.react-datepicker__time-list {
+  padding-right: 0px !important;
+}
+
+li.react-datepicker__time-list-item {
+  font-size: 11px;
+}
+
+body {
+  background-color: #14b69f;
+}
+
+.react-datepicker__day--selected {
+  background-color: #14b69f !important;
 }

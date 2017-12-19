@@ -11,7 +11,8 @@ import Button from './button';
 import * as moment from 'moment';
 // tslint:disable-next-line:no-var-requires
 import './style.css';
-
+// tslint:disable-next-line:no-var-requires
+// const data = require('../data/style.json');
 // tslint:disable-next-line:no-var-requires
 const DatePicker = require('react-datepicker').default;
 // tslint:disable-next-line:no-submodule-imports
@@ -24,6 +25,7 @@ const NavBar = styled.div`
   top: 0;
   display: flex;
   min-height: 120px;
+  justify-content: center;
 `;
 
 const Map = ReactMapboxGl({
