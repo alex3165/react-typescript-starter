@@ -1,0 +1,8 @@
+.datepicker {
+  width: 200px;
+  height: 66px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}

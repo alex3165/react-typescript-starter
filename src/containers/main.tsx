@@ -8,6 +8,14 @@ import styled from 'styled-components';
 import { getDeepLink } from '../link';
 import StationLabel from './station-label';
 import Button from './button';
+import * as moment from 'moment';
+// tslint:disable-next-line:no-var-requires
+import './style.css';
+
+// tslint:disable-next-line:no-var-requires
+const DatePicker = require('react-datepicker').default;
+// tslint:disable-next-line:no-submodule-imports
+import 'react-datepicker/dist/react-datepicker.css';
 
 const NavBar = styled.div`
   position: absolute;
@@ -38,10 +46,13 @@ export interface State {
   origin?: string;
   destination?: string;
   hover?: string;
+  date: string;
 }
 
 class Main extends React.Component<Props> {
-  public state: State = {};
+  public state: State = {
+    date: moment().format()
+  };
 
   public componentWillMount() {
     this.props.getLocations();
@@ -62,7 +73,7 @@ class Main extends React.Component<Props> {
     }
 
     window.open(
-      getDeepLink(this.state.origin, this.state.destination),
+      getDeepLink(this.state.origin, this.state.destination, this.state.date),
       '_blank'
     );
   };
@@ -84,6 +95,12 @@ class Main extends React.Component<Props> {
   private onDeleteStation = (direction: string) => {
     this.setState({
       [direction]: undefined
+    });
+  };
+
+  private onChangeDate = (date: any) => {
+    this.setState({
+      date: date.format()
     });
   };
 
@@ -140,6 +157,12 @@ class Main extends React.Component<Props> {
           >
             {destinationLocation && destinationLocation.name}
           </StationLabel>
+          <DatePicker
+            selected={moment(this.state.date)}
+            onChange={this.onChangeDate}
+            showTimeSelect={true}
+            className="datepicker"
+          />
           <Button onClick={this.onGetToResults}>Let's go</Button>
         </NavBar>
       </div>
