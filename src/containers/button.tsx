@@ -3,7 +3,7 @@ import { mint, ivy } from '../colors';
 
 const Button = styled.button`
   width: 200px;
-  max-height: 70px;
+  height: 70px;
   background-color: ${mint};
   color: white;
   cursor: pointer;

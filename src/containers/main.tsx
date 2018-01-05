@@ -26,6 +26,7 @@ const NavBar = styled.div`
   display: flex;
   min-height: 120px;
   justify-content: center;
+  align-items: center;
 `;
 
 const Map = ReactMapboxGl({
@@ -164,6 +165,7 @@ class Main extends React.Component<Props> {
             onChange={this.onChangeDate}
             showTimeSelect={true}
             className="datepicker"
+            dateFormat="DD/MM/YYYY [at] HH:mm"
           />
           <Button onClick={this.onGetToResults}>Let's go</Button>
         </NavBar>
