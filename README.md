@@ -1,15 +1,17 @@
-# ta-station-finder
+# react-typescript-starter
 
-Find an origin and a destination station on a map and deeplink to the Trainline results page
+This project is no longer maintained, please use react-scripts instead which support typescript out of the box
 
 ## How to start?
 
 ### install dependencies
+
 ```
 npm i
 ```
 
 ### start dev server
+
 ```
 npm start
 ```
